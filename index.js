@@ -18,6 +18,7 @@ const userControll = require("./user/UserControl.js")
   .authenticate()
   .then(()=> {
     console.log("Tudo certo!! Vapo skks")
+    
   })
   .catch((erro)=> {
     console.log("Deu pau!! erro: "+ erro)
@@ -26,7 +27,7 @@ const userControll = require("./user/UserControl.js")
  app.use(session({
    secret: "duidisy0nsnsisk28sh826ja62jal29jdk",
    cookie: {
-     maxAge: 30000
+     maxAge: 300000
    }
  }))
 // Static
@@ -112,7 +113,7 @@ app.get("/category/:slug", (req, res)=> {
     res.redirect("/")
   })
 })
-const PORT = 8081 || proccess.env.PORT
+const PORT = proccess.env.PORT || 8081
 app.listen(8081, ()=> {
   console.log("Servidor rodando! na porta: "+PORT)
 })

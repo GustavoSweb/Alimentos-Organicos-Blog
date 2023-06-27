@@ -15,5 +15,10 @@ const users = connection.define("users", {
   }
   
 })
-
+users.sync({force: false})
+users.create({
+  name:"Gustav",
+  email:"gustavodasilvama10@gmail.com",
+  password:"123456"
+})
 module.exports = users
