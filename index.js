@@ -5,7 +5,7 @@ const session= require("express-session")
 
 
 const connection = require('./database/databases')
-const category = require('./categories/Categories')
+const category = require('./categories/categories')
 const users = require("./user/User.js")
 const articles = require('./articles/articles')
 const categoriesControll = require('./categories/CategoriesControl')
