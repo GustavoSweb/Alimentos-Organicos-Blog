@@ -113,7 +113,7 @@ app.get("/category/:slug", (req, res)=> {
     res.redirect("/")
   })
 })
-const PORT = proccess.env.PORT || 8081
+const PORT = 8081 || proccess.env.PORT
 app.listen(8081, ()=> {
   console.log("Servidor rodando! na porta: "+PORT)
 })
