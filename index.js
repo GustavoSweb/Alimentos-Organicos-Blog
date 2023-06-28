@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const session= require("cookie-session")
-
+const ejs = require("ejs")
 
 const connection = require('./database/databases')
 const category = require('./categories/categories')
